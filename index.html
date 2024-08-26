@@ -1,0 +1,263 @@
+<!-- TODO 1: Create the HTML Boilerplate -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joshua's Portfolio</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h1,
+      h2 {
+        text-align: center;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      header {
+        text-align: center;
+        border: 2px solid rgba(0, 255, 102, 0.656);
+        background-color: rgba(0, 255, 102, 0.656);
+      }
+      div.mycontainer h3 {
+        font-family: Times New Roman, Times, serif;
+        font-weight: bold;
+        font-size: 25px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+      }
+      div.mycontainer h4,
+      p {
+        text-align: left;
+        margin-left: 30px;
+      }
+      div.flexcontainer {
+        display: flex;
+      }
+      div.flexcontainer div {
+        width: 60%;
+        padding-inline: 40px;
+      }
+      div.mycontainer a {
+        text-align: center;
+        color: rgba(0, 128, 255, 0.886);
+      }
+      div.flexcontainer img {
+        max-width: 100%;
+        height: auto;
+        margin-left: 30px;
+      }
+      li a {
+        text-align: center;
+        font-size: 12px;
+        color: black;
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+      }
+      footer li {
+        float: left;
+      }
+      li a:hover {
+        background-color: aquamarine;
+      }
+      #demo {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: auto;
+        background-color: rgba(0, 255, 102, 0.656);
+      }
+      ul {
+        list-style-type: circle;
+        justify-content: center;
+      }
+      div.mycontainer form {
+        margin-left: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      #form {
+        text-align: center;
+      }
+      div.myform {
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 15px;
+        max-width: 400px;
+        height: auto;
+        margin: auto;
+      }
+      div.myform input {
+        width: 90%;
+      }
+      div.myform textarea {
+        width: 90%;
+        height: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- TODO 2: Add Your previous projects' HTML into the public folder -->
+    <!-- TODO 3: Take screenshots of your project previews and add the images to the images folder -->
+    <!-- TODO 4: Add titles/subtitles etc. -->
+    <header>
+      <h1>Joshua Kimmich's Portfolio</h1>
+      <h2>I'm a Web Developer</h2>
+    </header>
+    <hr />
+    <!-- TODO 5: Add a link to the project pages -->
+    <!-- TODO 6: Add images to show the project previews
+HINT for TODO 6: You can use the height attribute set to 200 to make the image smaller:
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img#attr-height -->
+    <div class="mycontainer">
+      <h3>Profile</h3>
+      <p>
+        A motivated and dedicated second-year student at the Faculty of
+        Engineering and Technology, University of Buea, with a strong foundation
+        in information technology and communication. Seeking to leverage my
+        skills in documentation, transcription, PowerPoint, and team management
+        in a volunteer role with the African Union Sixth Region Global Youth
+        Volunteer Program.
+      </p>
+      <h3>Education</h3>
+      <h4>High School Certificate</h4>
+      <ul>
+        <li>Government Bilingual High School Dschang , Cameroon</li>
+        <li>Graduated: 2022</li>
+      </ul>
+      <h4>Currently Enrolled</h4>
+      <ul>
+        <li>Faculty of Engineering and Technology, University of Buea</li>
+        <li>Bachelor of Science in Computer Engineering</li>
+      </ul>
+      <h3>Certifications</h3>
+      <ul>
+        <li>Introduction to Cybersecurity - Great Learning</li>
+        <li>Java Programming - Great Learning</li>
+        <li>Spoken English - Great Learning</li>
+      </ul>
+      <h3>Skills</h3>
+      <ul>
+        <li>
+          <b>Technical skills: </b>Documentation, Transcription, PowerPoint,
+          Java Programming
+        </li>
+        <li>
+          <b>Soft Skills: </b>Communication, Team Management, Leadership,
+          Teamwork
+        </li>
+      </ul>
+      <h3>Projects</h3>
+      <div class="flexcontainer">
+        <div>
+          <a href="./public/Mymovie-ranknig.html" target="_top"
+            ><h4>Moving Ranking Project</h4></a
+          >
+          <img
+            src="./assets/images/Mymovie-ranking.png"
+            height="200"
+            alt="moving ranking project preview"
+          />
+        </div>
+        <div>
+          <a href="./public/Mybirthday-invite.html"
+            ><h4>Birthday Invite Project</h4></a
+          >
+          <img
+            src="./assets/images/Mybirthday-invite.png"
+            height="200"
+            alt="birthday invite project preview"
+          />
+        </div>
+      </div>
+
+      <h3>Experience</h3>
+      <h4>Group Leader</h4>
+      <ul>
+        <li>
+          University of Buea, Buea, Cameroon 2023/2024 Academic Year Present
+        </li>
+        <li>
+          Led various group projects assigned by lecturers, ensuring timely
+          completion and high-quality results.
+        </li>
+        <li>Enhanced teamwork and communication among group members.</li>
+        <li>
+          Managed documentation and presentation of project findings using
+          PowerPoint.
+        </li>
+      </ul>
+      <h3>Languages</h3>
+      <ol>
+        <li>English (Fluent)</li>
+        <li>French (Fluent)</li>
+      </ol>
+      <h3>Interest</h3>
+      <ul>
+        <li>Information Technology</li>
+        <li>Communication</li>
+        <li>Community Development</li>
+      </ul>
+      <hr />
+      <h3 id="form">Please Fill The Form Below If You Need Our Services</h3>
+      <div class="myform">
+        <form autocomplete="on" method="post">
+          <label for="sname">Surname</label><br />
+          <input
+            type="text"
+            id="sname"
+            name="sname"
+            multiple
+            required
+            autofocus
+          /><br />
+          <label for="lname">Last name</label><br />
+          <input type="text" id="lname" name="lname" required /><br />
+          <label for="email">Email</label><br />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            autocomplete="off"
+          /><br />
+          <label for="country">choose country</label><br />
+          <input list="country" name="countries" /><br />
+          <datalist id="country">
+            <option value="Cameroon">Cameroon</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Ghana">Ghana</option>
+            <option value="Togo">Togo</option>
+            <option value="Benin">Benin</option>
+            <option value="Senegal">Senegal</option>
+            <option value="Mali">Mali</option>
+            <option value="Ivory Coast">Ivory Coast</option>
+            <option value="Cote d'Ivoire">Cote d'Ivoire</option>
+            <option value="Burkina Faso">Burkina Faso</option>
+            <option value="Central African Republic">
+              Central African Republic
+            </option>
+            <option value="Gambia">Gambia</option>
+          </datalist>
+          <label for="textfield">What you need from our services</label><br />
+          <textarea name="message" id="textfield">
+Enter your comment Here!!</textarea
+          ><br />
+          <input type="submit" value="submit" id="textfield" />
+        </form>
+      </div>
+    </div>
+
+    <hr />
+    <!-- TODO 7: Add the Contact Me and About Me page links -->
+    <footer>
+      <ul id="demo">
+        <li><a href="./public/about.html">About Us</a></li>
+        <li><a href="./public/contact.html">Contact Us</a></li>
+        <li><a href="./public/Mybirthday-invite.html">Birthday-Invite</a></li>
+        <li><a href="./public/Mymovie-ranking.html">Movie-Ranking</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
